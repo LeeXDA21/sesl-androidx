@@ -20,27 +20,27 @@ extra.apply {
             "androidx.viewpager2" to listOf("1.1.0", "1.0.0-sesl8", "rev0", 21, 35),
             "androidx.swiperefreshlayout" to listOf("1.2.0-alpha01", "1.0.0-sesl8", "rev0", 21, 35),
             "androidx.indexscroll" to listOf("1.0.0", "1.0.0-sesl8", "rev0", 21, 35),
-            "androidx.picker-basic" to listOf("1.0.7", "1.0.7-sesl8", "rev2", 21, 35),
-            "androidx.picker-color" to listOf("1.0.2", "1.0.3-sesl8", "rev0", 21, 35),
-            "androidx.picker-app" to listOf("1.0.6", "1.0.6-sesl8", "rev0", 21, 35),
+            "androidx.picker-basic" to listOf("1.0.7", "1.0.7-sesl8", "rev3", 21, 35),
+            "androidx.picker-color" to listOf("1.0.2", "1.0.3-sesl8", "rev1", 21, 35),
+            "androidx.picker-app" to listOf("1.0.6", "1.0.6-sesl8", "rev1", 21, 35),
             "androidx.apppickerview" to listOf("1.0.1", "1.0.1-sesl7", "rev1", 21, 35),
         )
     )
 
     set(
         "pomInfo", mapOf(
-            "inceptionYear" to "2024",
+            "inceptionYear" to "2026",
             "packaging" to "aar",
-            "url" to "https://github.com/tribalfs/sesl-androidx",
-            "scmUrl" to "https://github.com/tribalfs/sesl-androidx",
-            "scmConnection" to "scm:git@github.com:tribalfs/sesl-androidx.git",
-            "devConnection" to "scm:git@github.com:tribalfs/sesl-androidx.git",
+            "url" to "https://github.com/LeeXDA21/sesl-androidx",
+            "scmUrl" to "https://github.com/LeeXDA21/sesl-androidx",
+            "scmConnection" to "scm:git@github.com:LeeXDA21/sesl-androidx.git",
+            "devConnection" to "scm:git@github.com:LeeXDA21/sesl-androidx.git",
             "licenceName" to "Apache-2.0 License",
-            "licenseUrl" to "https://github.com/tribalfs/sesl-androidx/blob/sesl-androidx-main/LICENSE.txt",
+            "licenseUrl" to "https://github.com/LeeXDA21/sesl-androidx/blob/sesl-androidx-main/LICENSE.txt",
             "licenceDist" to "repo",
-            "developerId" to "tribalfs",
-            "developName" to "Tribalfs",
-            "developerUrl" to "https://github.com/tribalfs",
+            "developerId" to "LeeXDA21",
+            "developName" to "LeeXDA21",
+            "developerUrl" to "https://github.com/LeeXDA21",
         )
     )
 

@@ -63,14 +63,14 @@ allprojects {
         google()
         mavenCentral()
         maven {
-            url = uri("https://maven.pkg.github.com/tribalfs/sesl-androidx")
+            url = uri("https://maven.pkg.github.com/LeeXDA21/sesl-androidx")
             credentials {
                 username = githubUsername
                 password = githubAccessToken
             }
         }
         maven {
-            url = uri("https://maven.pkg.github.com/tribalfs/sesl-material-components-android")
+            url = uri("https://maven.pkg.github.com/LeeXDA21/sesl-material-components-android")
             credentials {
                 username = githubUsername
                 password = githubAccessToken
@@ -134,14 +134,14 @@ subprojects {
                     sourceLink {
                         localDirectory.set(projectDir.resolve("src"))
                         val moduleDir = "${projectDir.parentFile.name}/${project.name}"
-                        remoteUrl("https://github.com/tribalfs/sesl-androidx/blob/sesl-androidx-main/${moduleDir}/src")
+                        remoteUrl("https://github.com/LeeXDA21/sesl-androidx/blob/sesl-androidx-main/${moduleDir}/src")
                         remoteLineSuffix.set("#L")
                     }
 
                     externalDocumentationLinks {
                         register("sesl.material") {
-                            url("https://tribalfs.github.io/sesl-material-components-android/")
-                            packageListUrl("https://tribalfs.github.io/sesl-material-components-android/-s-e-s-l%20-material/package-list")
+                            url("https://LeeXDA21.github.io/sesl-material-components-android/")
+                            packageListUrl("https://LeeXDA21.github.io/sesl-material-components-android/-s-e-s-l%20-material/package-list")
                         }
                     }
                 }
@@ -281,7 +281,7 @@ subprojects {
                             repositories {
                                 maven {
                                     name = "GitHubPackages"
-                                    url = uri("https://maven.pkg.github.com/tribalfs/sesl-androidx")
+                                    url = uri("https://maven.pkg.github.com/LeeXDA21/sesl-androidx")
                                     credentials {
                                         username = githubUsername
                                         password = githubAccessToken
