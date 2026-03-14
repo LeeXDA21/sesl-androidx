@@ -112,17 +112,13 @@ jobs:
       - name: Seed local Maven repo
         if: steps.detect_changed_modules.outputs.any_changed == 'true'
         run: |
-          TASKS=""
           for module in $ORDERED_MODULES; do
             if [[ " ${{ steps.detect_changed_modules.outputs.changed_modules }} " == *" $module "* ]]; then
               gradle_project=${module#androidx.}
-              TASKS="$TASKS :$gradle_project:publishToMavenLocal"
+              echo "Seeding $gradle_project to mavenLocal..."
+              ./gradlew :$gradle_project:publishToMavenLocal
             fi
           done
-
-          if [ -n "$TASKS" ]; then
-            ./gradlew $TASKS
-          fi
 
       - name: Publish changed modules
         if: steps.detect_changed_modules.outputs.any_changed == 'true'
