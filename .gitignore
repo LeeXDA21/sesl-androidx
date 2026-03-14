@@ -28,6 +28,8 @@ jacoco.exec
 /studio
 /ui/studio
 
+gradle.properties
+
 # When Gradle configuration fails with the --profile option enabled it creates this folder.
 /reports
 
