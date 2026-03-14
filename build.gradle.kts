@@ -67,14 +67,14 @@ allprojects {
         google()
         mavenCentral()
         maven {
-            url = uri("https://maven.pkg.github.com/LeeXDA21/sesl-androidx")
+            url = uri("https://maven.pkg.github.com/tribalfs/sesl-androidx")
             credentials {
                 username = githubUsername
                 password = githubAccessToken
             }
         }
         maven {
-            url = uri("https://maven.pkg.github.com/LeeXDA21/sesl-material-components-android")
+            url = uri("https://maven.pkg.github.com/tribalfs/sesl-material-components-android")
             credentials {
                 username = githubUsername
                 password = githubAccessToken
