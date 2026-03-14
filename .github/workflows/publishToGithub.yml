@@ -116,7 +116,7 @@ jobs:
             if [[ " ${{ steps.detect_changed_modules.outputs.changed_modules }} " == *" $module "* ]]; then
               gradle_project=${module#androidx.}
               echo "Seeding $gradle_project to mavenLocal..."
-              ./gradlew :$gradle_project:publishToMavenLocal
+              ./gradlew -PskipDocs=true :$gradle_project:publishToMavenLocal
             fi
           done
 
@@ -127,7 +127,7 @@ jobs:
             if [[ " ${{ steps.detect_changed_modules.outputs.changed_modules }} " == *" $module "* ]]; then
               gradle_project=${module#androidx.}
               echo "Publishing $gradle_project..."
-              ./gradlew :$gradle_project:publish
+              ./gradlew -PskipDocs=true :$gradle_project:publish
             fi
           done
 

@@ -15,6 +15,10 @@ plugins {
 
 apply(from = File("manifest.gradle.kts"))
 
+val skipDocs = providers.gradleProperty("skipDocs")
+    .map(String::toBoolean)
+    .orElse(false)
+
 // Android block for root project
 // required by dokka
 android {
@@ -96,7 +100,9 @@ subprojects {
 
         if (requiresDocs) {
             plugins.apply("kotlin-android")
-            plugins.apply("org.jetbrains.dokka")
+            if (!skipDocs.get()) {
+                plugins.apply("org.jetbrains.dokka")
+            }
         }
     }
 }
@@ -213,7 +219,9 @@ subprojects {
                     publishing {
                         singleVariant("release") {
                             withSourcesJar()
-                            withJavadocJar()
+                            if (!skipDocs.get()) {
+                                withJavadocJar()
+                            }
                         }
                     }
 
