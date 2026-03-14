@@ -12,9 +12,7 @@ dependencies {
     api(libs.kotlinStdlib)
     api(libs.androidx.annotation)
 
-    api(libs.sesl.androidx.core){
-        version { require("1.17.0+1.0.7-sesl8+rev3") }
-    }
+    api(libs.sesl.androidx.core)
 }
 
 extra.set(

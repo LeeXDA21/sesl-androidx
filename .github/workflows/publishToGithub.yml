@@ -7,11 +7,18 @@ on:
     paths:
       - 'manifest.gradle.kts'
   workflow_dispatch:
+    inputs:
+      bootstrap_all:
+        description: 'Publish all SESL modules in dependency order for an empty GitHub Packages repo'
+        required: false
+        default: false
+        type: boolean
 jobs:
   check-and-publish:
     env:
       GH_USERNAME: ${{ secrets.GH_USERNAME }}
       GH_ACCESS_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
+      ORDERED_MODULES: "androidx.core androidx.core-ktx androidx.customview androidx.viewpager androidx.fragment androidx.drawerlayout androidx.coordinatorlayout androidx.appcompat androidx.recyclerview androidx.preference androidx.viewpager2 androidx.swiperefreshlayout androidx.slidingpanelayout androidx.indexscroll androidx.picker-basic androidx.picker-color androidx.picker-app androidx.apppickerview"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -26,6 +33,13 @@ jobs:
       - name: Detect changed modules
         id: detect_changed_modules
         run: |
+          if [ "${{ github.event.inputs.bootstrap_all || 'false' }}" = "true" ]; then
+            echo "changed_modules=$ORDERED_MODULES" >> "$GITHUB_OUTPUT"
+            echo "any_changed=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::Bootstrap mode enabled; publishing all SESL modules in dependency order"
+            exit 0
+          fi
+
           PREV_COMMIT=$(git rev-parse HEAD^)
 
           extract_versions() {
@@ -61,13 +75,64 @@ jobs:
             echo "any_changed=false" >> $GITHUB_OUTPUT
           fi
 
+      - name: Sync SESL versions from manifest
+        if: steps.detect_changed_modules.outputs.any_changed == 'true'
+        run: |
+          python3 <<'PY'
+          import pathlib
+          import re
+
+          manifest_text = pathlib.Path("manifest.gradle.kts").read_text()
+          catalog_path = pathlib.Path("gradle/libs.versions.toml")
+          catalog_text = catalog_path.read_text()
+
+          manifest_versions = []
+          for module, base, sesl, rev in re.findall(
+              r'"(androidx\.[^"]+)"\s+to\s+listOf\("([^"]+)",\s*"([^"]+)",\s*"([^"]+)",',
+              manifest_text,
+          ):
+              artifact = module.removeprefix("androidx.")
+              group_suffix = artifact.split("-")[0]
+              coordinate = f'sesl.androidx.{group_suffix}:{artifact}'
+              version = f'{base}+{sesl}+{rev}'
+              manifest_versions.append((coordinate, version))
+
+          for coordinate, version in manifest_versions:
+              pattern = re.compile(
+                  rf'^(sesl-androidx-[A-Za-z0-9-]+\s*=\s*\{{\s*module\s*=\s*"{re.escape(coordinate)}",\s*version\s*=\s*")([^"]+)("\s*\}})$',
+                  re.MULTILINE,
+              )
+              catalog_text, count = pattern.subn(rf'\g<1>{version}\g<3>', catalog_text)
+              if count:
+                  print(f'Updated {coordinate} -> {version}')
+
+          catalog_path.write_text(catalog_text)
+          PY
+
+      - name: Seed local Maven repo
+        if: steps.detect_changed_modules.outputs.any_changed == 'true'
+        run: |
+          TASKS=""
+          for module in $ORDERED_MODULES; do
+            if [[ " ${{ steps.detect_changed_modules.outputs.changed_modules }} " == *" $module "* ]]; then
+              gradle_project=${module#androidx.}
+              TASKS="$TASKS :$gradle_project:publishToMavenLocal"
+            fi
+          done
+
+          if [ -n "$TASKS" ]; then
+            ./gradlew $TASKS
+          fi
+
       - name: Publish changed modules
         if: steps.detect_changed_modules.outputs.any_changed == 'true'
         run: |
-          for module in ${{ steps.detect_changed_modules.outputs.changed_modules }}; do
-            gradle_project=${module#androidx.}
-            echo "Publishing $gradle_project..."
+          for module in $ORDERED_MODULES; do
+            if [[ " ${{ steps.detect_changed_modules.outputs.changed_modules }} " == *" $module "* ]]; then
+              gradle_project=${module#androidx.}
+              echo "Publishing $gradle_project..."
               ./gradlew :$gradle_project:publish
+            fi
           done
 
       - name: Generate and publish Dokka docs
