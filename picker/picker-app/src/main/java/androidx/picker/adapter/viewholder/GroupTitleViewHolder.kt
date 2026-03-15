@@ -20,7 +20,7 @@ import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.model.GroupTitleStyleData
 import androidx.picker.model.viewdata.GroupTitleViewData
 import androidx.picker.model.viewdata.ViewData

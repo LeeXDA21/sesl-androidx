@@ -48,7 +48,7 @@ import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 import androidx.annotation.RestrictTo;
-import androidx.picker.R;
+import androidx.picker.basic.R;
 import androidx.reflect.lunarcalendar.SeslFeatureReflector;
 import androidx.reflect.lunarcalendar.SeslSolarLunarTablesReflector;
 

@@ -1,7 +1,7 @@
 package androidx.picker.features.composable.left
 
 import androidx.annotation.LayoutRes
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.features.composable.ComposableFrame
 import androidx.picker.features.composable.ComposableViewHolder
 import kotlin.jvm.java

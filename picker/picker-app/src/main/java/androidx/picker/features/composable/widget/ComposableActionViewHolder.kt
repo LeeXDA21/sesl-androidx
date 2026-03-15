@@ -21,7 +21,7 @@ import android.widget.ImageButton
 import androidx.annotation.Keep
 import androidx.core.util.Supplier
 import androidx.core.view.isVisible
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.features.composable.ActionableComposableViewHolder
 import androidx.picker.model.viewdata.AppInfoViewData
 import androidx.picker.model.viewdata.ViewData

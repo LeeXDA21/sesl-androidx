@@ -20,7 +20,7 @@ import android.content.Context.ACCESSIBILITY_SERVICE
 import android.view.View
 import android.view.accessibility.AccessibilityManager
 import android.widget.ImageView
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.model.viewdata.AppInfoViewData
 import androidx.picker.model.viewdata.ViewData
 

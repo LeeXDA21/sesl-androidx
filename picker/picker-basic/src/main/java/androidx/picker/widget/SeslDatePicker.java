@@ -74,7 +74,7 @@ import androidx.annotation.IntRange;
 import androidx.annotation.RestrictTo;
 import androidx.appcompat.widget.TooltipCompat;
 import androidx.core.content.res.ResourcesCompat;
-import androidx.picker.R;
+import androidx.picker.basic.R;
 import androidx.reflect.feature.SeslCscFeatureReflector;
 import androidx.reflect.feature.SeslFloatingFeatureReflector;
 import androidx.reflect.lunarcalendar.SeslFeatureReflector;

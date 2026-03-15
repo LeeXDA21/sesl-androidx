@@ -23,7 +23,7 @@ import android.graphics.drawable.GradientDrawable;
 import android.util.AttributeSet;
 import android.widget.SeekBar;
 
-import androidx.picker.R;
+import androidx.picker.color.R;
 
 /*
  * Original code by Samsung, all rights reserved to the original author.

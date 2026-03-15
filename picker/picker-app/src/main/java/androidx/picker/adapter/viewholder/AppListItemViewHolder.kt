@@ -18,7 +18,7 @@ package androidx.picker.adapter.viewholder
 
 import android.view.View
 import android.view.ViewStub
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.adapter.AbsAdapter
 import androidx.picker.features.composable.ActionableComposableViewHolder
 import androidx.picker.features.composable.ComposableType

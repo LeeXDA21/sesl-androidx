@@ -41,7 +41,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatDialogFragment;
 import androidx.appcompat.util.SeslMisc;
 import androidx.fragment.app.FragmentActivity;
-import androidx.picker.R;
+import androidx.picker.color.R;
 import androidx.picker.eyeDropper.SeslBitmapHolder;
 import androidx.picker.eyeDropper.SeslEyeDropperActivity;
 import androidx.picker3.widget.SeslColorPicker;

@@ -30,7 +30,7 @@ import android.widget.SeekBar;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.core.graphics.ColorUtils;
-import androidx.picker.R;
+import androidx.picker.color.R;
 
 /*
  * Original code by Samsung, all rights reserved to the original author.

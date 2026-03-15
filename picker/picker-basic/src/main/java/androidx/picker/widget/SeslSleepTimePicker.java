@@ -59,7 +59,7 @@ import android.widget.TextView;
 import androidx.annotation.StyleRes;
 import androidx.core.content.ContextCompat;
 import androidx.core.widget.TextViewCompat;
-import androidx.picker.R;
+import androidx.picker.basic.R;
 import androidx.picker.util.SeslSleepTimePickerUtil;
 
 import java.text.DateFormatSymbols;

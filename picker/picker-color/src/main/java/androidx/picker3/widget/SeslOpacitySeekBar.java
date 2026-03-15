@@ -25,7 +25,7 @@ import android.widget.SeekBar;
 
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.ColorUtils;
-import androidx.picker.R;
+import androidx.picker.color.R;
 
 /**
  * Represents a SeekBar for adjusting opacity.

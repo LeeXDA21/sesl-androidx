@@ -72,7 +72,7 @@ import androidx.dynamicanimation.animation.DynamicAnimation;
 import androidx.dynamicanimation.animation.FloatValueHolder;
 import androidx.dynamicanimation.animation.SpringAnimation;
 import androidx.dynamicanimation.animation.SpringForce;
-import androidx.picker.R;
+import androidx.picker.basic.R;
 import androidx.picker.util.SeslAnimationListener;
 import androidx.picker.widget.SeslSpinningDatePickerSpinner.OnScrollListener;
 import androidx.reflect.content.res.SeslCompatibilityInfoReflector;

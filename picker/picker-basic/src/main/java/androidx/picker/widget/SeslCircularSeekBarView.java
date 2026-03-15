@@ -51,7 +51,7 @@ import android.view.View;
 import android.view.animation.PathInterpolator;
 
 import androidx.core.content.res.ResourcesCompat;
-import androidx.picker.R;
+import androidx.picker.basic.R;
 import androidx.picker.util.SeslSleepTimePickerUtil;
 
 

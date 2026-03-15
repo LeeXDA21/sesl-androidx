@@ -19,7 +19,7 @@ package androidx.picker.adapter
 import android.content.Context
 import android.view.ViewGroup
 import androidx.annotation.RestrictTo
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.adapter.viewholder.GridCheckBoxViewHolder
 import androidx.picker.adapter.viewholder.GridRemoveViewHolder
 import androidx.picker.adapter.viewholder.GridViewHolder

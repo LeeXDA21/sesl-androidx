@@ -29,7 +29,7 @@ import android.view.ViewGroup;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatDialogFragment;
 import androidx.appcompat.util.SeslMisc;
-import androidx.picker.R;
+import androidx.picker.color.R;
 import androidx.picker.widget.SeslColorPicker;
 
 import java.io.Serializable;

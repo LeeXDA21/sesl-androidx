@@ -24,7 +24,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.core.content.withStyledAttributes
 import androidx.core.view.isInvisible
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.adapter.HeaderFooterAdapter
 import androidx.picker.adapter.layoutmanager.AutoFitGridLayoutManager
 import androidx.picker.common.log.LogTag

@@ -4,7 +4,7 @@ import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.model.viewdata.ViewData
 import java.security.InvalidParameterException
 import kotlin.ranges.IntRange

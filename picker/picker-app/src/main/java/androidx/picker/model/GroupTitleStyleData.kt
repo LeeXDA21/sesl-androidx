@@ -1,7 +1,7 @@
 package androidx.picker.model
 
 import androidx.annotation.ColorRes
-import androidx.picker.R
+import androidx.picker.app.R
 
 
 /**

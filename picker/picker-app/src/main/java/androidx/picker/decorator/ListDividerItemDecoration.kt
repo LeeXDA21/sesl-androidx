@@ -6,7 +6,7 @@ import android.graphics.Rect
 import android.graphics.drawable.Drawable
 import androidx.core.content.withStyledAttributes
 import androidx.core.view.children
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.adapter.viewholder.AppListItemViewHolder
 import androidx.picker.adapter.viewholder.FrameViewHolder
 import androidx.picker.adapter.viewholder.GroupTitleViewHolder

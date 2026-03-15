@@ -27,7 +27,7 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
 
-import androidx.picker.R;
+import androidx.picker.color.R;
 
 /**
  * A custom View that displays a magnified portion of a Bitmap, typically used for an eyedropper

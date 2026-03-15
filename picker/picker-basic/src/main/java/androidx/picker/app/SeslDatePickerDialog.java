@@ -29,7 +29,7 @@ import android.widget.Button;
 import androidx.annotation.StyleRes;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.util.SeslMisc;
-import androidx.picker.R;
+import androidx.picker.basic.R;
 import androidx.picker.widget.SeslDatePicker;
 
 /*

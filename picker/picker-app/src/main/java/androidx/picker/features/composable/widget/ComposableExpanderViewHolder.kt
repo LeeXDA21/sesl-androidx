@@ -20,7 +20,7 @@ import android.annotation.SuppressLint
 import android.view.View
 import android.widget.ImageView
 import androidx.annotation.Keep
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.adapter.AbsAdapter
 import androidx.picker.features.composable.ActionableComposableViewHolder
 import androidx.picker.model.viewdata.AppInfoViewData

@@ -36,7 +36,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import androidx.core.content.ContextCompat;
-import androidx.picker.R;
+import androidx.picker.color.R;
 
 import java.util.ArrayList;
 

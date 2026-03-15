@@ -31,7 +31,7 @@ import androidx.appcompat.util.SeslRoundedCorner.ROUNDED_CORNER_ALL
 import androidx.appcompat.util.SeslRoundedCorner.ROUNDED_CORNER_NONE
 import androidx.core.content.withStyledAttributes
 import androidx.core.util.Supplier
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.adapter.AbsAdapter
 import androidx.picker.adapter.AppPickerAdapter
 import androidx.picker.adapter.HeaderFooterAdapter

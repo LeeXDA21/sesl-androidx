@@ -27,7 +27,7 @@ import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.SectionIndexer
 import androidx.annotation.RestrictTo
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.adapter.viewholder.PickerViewHolder
 import androidx.picker.common.log.LogTag
 import androidx.picker.common.log.info

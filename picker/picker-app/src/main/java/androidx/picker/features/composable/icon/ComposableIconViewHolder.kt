@@ -19,7 +19,7 @@ package androidx.picker.features.composable.icon
 import android.view.View
 import android.widget.ImageView
 import androidx.annotation.Keep
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.features.composable.ComposableViewHolder
 import androidx.picker.helper.loadIcon
 import androidx.picker.model.viewdata.AppInfoViewData

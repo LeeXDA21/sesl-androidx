@@ -5,7 +5,7 @@ import android.util.AttributeSet
 import androidx.annotation.VisibleForTesting
 import androidx.core.content.ContextCompat
 import androidx.core.content.withStyledAttributes
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.adapter.AbsAdapter
 import androidx.picker.adapter.HeaderFooterAdapter
 import androidx.picker.adapter.ListAdapter

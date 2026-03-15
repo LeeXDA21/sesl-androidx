@@ -46,7 +46,7 @@ import androidx.annotation.RestrictTo;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.customview.widget.ExploreByTouchHelper;
-import androidx.picker.R;
+import androidx.picker.basic.R;
 import androidx.reflect.feature.SeslCscFeatureReflector;
 import androidx.reflect.lunarcalendar.SeslFeatureReflector;
 import androidx.reflect.lunarcalendar.SeslLunarDateUtilsReflector;

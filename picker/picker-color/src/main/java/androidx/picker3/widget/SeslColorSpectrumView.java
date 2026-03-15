@@ -40,7 +40,7 @@ import androidx.core.math.MathUtils;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.customview.widget.ExploreByTouchHelper;
-import androidx.picker.R;
+import androidx.picker.color.R;
 
 import java.util.List;
 

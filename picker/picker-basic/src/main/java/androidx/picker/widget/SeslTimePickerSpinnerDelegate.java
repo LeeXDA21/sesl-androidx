@@ -57,7 +57,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import androidx.picker.R;
+import androidx.picker.basic.R;
 import androidx.picker.util.SeslAnimationListener;
 import androidx.reflect.icu.SeslLocaleDataReflector;
 

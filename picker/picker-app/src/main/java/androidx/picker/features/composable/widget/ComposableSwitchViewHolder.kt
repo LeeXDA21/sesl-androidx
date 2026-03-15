@@ -20,7 +20,7 @@ import android.view.View
 import androidx.annotation.Keep
 import androidx.appcompat.widget.SwitchCompat
 import androidx.core.util.Supplier
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.features.composable.ActionableComposableViewHolder
 import androidx.picker.helper.setAccessibilityFocusable
 import androidx.picker.model.viewdata.AppInfoViewData

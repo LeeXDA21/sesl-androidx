@@ -60,7 +60,7 @@ import androidx.appcompat.graphics.drawable.SeslRecoilDrawable;
 import androidx.appcompat.util.SeslShapeDrawable;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.core.content.ContextCompat;
-import androidx.picker.R;
+import androidx.picker.color.R;
 import androidx.picker.eyeDropper.SeslEyeDropperActivity;
 
 import com.google.android.material.tabs.TabLayout;

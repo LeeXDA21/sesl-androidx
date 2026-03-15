@@ -65,7 +65,7 @@ import android.widget.ViewAnimator;
 import androidx.annotation.RestrictTo;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.core.view.ViewCompat;
-import androidx.picker.R;
+import androidx.picker.basic.R;
 import androidx.reflect.feature.SeslCscFeatureReflector;
 import androidx.reflect.feature.SeslFloatingFeatureReflector;
 import androidx.reflect.lunarcalendar.SeslFeatureReflector;

@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.SectionIndexer
 import androidx.appcompat.util.SeslRoundedCorner.ROUNDED_CORNER_NONE
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.adapter.viewholder.FrameViewHolder
 import androidx.picker.adapter.viewholder.PickerViewHolder
 import androidx.picker.helper.seslSetRoundedCorner

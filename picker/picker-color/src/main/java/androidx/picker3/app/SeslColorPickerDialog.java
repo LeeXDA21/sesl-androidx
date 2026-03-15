@@ -33,7 +33,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import androidx.appcompat.app.AlertDialog;
-import androidx.picker.R;
+import androidx.picker.color.R;
 import androidx.picker.eyeDropper.SeslBitmapHolder;
 import androidx.picker.eyeDropper.SeslEyeDropperActivity;
 import androidx.picker3.widget.SeslColorPicker;

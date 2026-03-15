@@ -27,7 +27,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import androidx.appcompat.app.AlertDialog;
-import androidx.picker.R;
+import androidx.picker.color.R;
 import androidx.picker.widget.SeslColorPicker;
 
 /*

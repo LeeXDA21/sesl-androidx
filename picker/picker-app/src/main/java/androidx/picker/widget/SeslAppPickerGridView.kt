@@ -20,7 +20,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.util.AttributeSet
 import androidx.core.content.ContextCompat
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.adapter.AbsAdapter
 import androidx.picker.adapter.GridAdapter
 import androidx.picker.adapter.HeaderFooterAdapter

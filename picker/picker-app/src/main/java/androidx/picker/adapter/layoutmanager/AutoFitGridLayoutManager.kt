@@ -1,7 +1,7 @@
 package androidx.picker.adapter.layoutmanager
 
 import android.content.Context
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.common.log.LogTag
 import androidx.picker.common.log.debug
 import androidx.recyclerview.widget.GridLayoutManager

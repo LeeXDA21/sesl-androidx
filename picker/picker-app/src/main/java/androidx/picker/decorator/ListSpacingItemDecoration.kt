@@ -3,7 +3,7 @@ package androidx.picker.decorator
 import android.content.Context
 import android.graphics.Rect
 import android.view.View
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.adapter.HeaderFooterAdapter
 import androidx.picker.adapter.viewholder.AppListItemViewHolder
 import androidx.picker.features.composable.ComposableType

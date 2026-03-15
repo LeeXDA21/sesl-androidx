@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.annotation.Keep
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.features.composable.ComposableViewHolder
 import androidx.picker.helper.getPrimaryDarkColor
 import androidx.picker.helper.getTextSecondaryColor

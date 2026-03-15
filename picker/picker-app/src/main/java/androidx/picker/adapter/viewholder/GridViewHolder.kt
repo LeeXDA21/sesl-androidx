@@ -24,7 +24,7 @@ import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.picker.R
+import androidx.picker.app.R
 import androidx.picker.helper.getPrimaryDarkColor
 import androidx.picker.helper.limitFontLarge
 import androidx.picker.helper.loadIcon

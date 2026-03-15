@@ -59,7 +59,7 @@ class PackageManagerHelperImpl(
     override val logTag: String = "PackageManagerHelperImpl"
 
     private val iconSize =
-        context.resources.getDimensionPixelSize(androidx.picker.R.dimen.picker_app_grid_icon_size)
+        context.resources.getDimensionPixelSize(androidx.picker.app.R.dimen.picker_app_grid_icon_size)
     private val pmList: HashMap<Int, PackageManager> = HashMap()
 
     private fun getLabelFromPackageManager(packageName: String, userId: Int): String {

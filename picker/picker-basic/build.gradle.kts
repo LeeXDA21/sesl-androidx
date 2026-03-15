@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "androidx.picker"
+    namespace = "androidx.picker.basic"
 
     sourceSets.named("main") {
         resources.srcDir("build/javaResources")

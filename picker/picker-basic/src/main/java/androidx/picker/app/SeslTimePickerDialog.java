@@ -27,7 +27,7 @@ import android.view.inputmethod.InputMethodManager;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.util.SeslMisc;
-import androidx.picker.R;
+import androidx.picker.basic.R;
 import androidx.picker.widget.SeslTimePicker;
 
 /*

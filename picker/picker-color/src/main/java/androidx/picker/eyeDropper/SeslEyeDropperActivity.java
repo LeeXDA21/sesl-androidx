@@ -35,7 +35,7 @@ import android.view.animation.PathInterpolator;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.picker.R;
+import androidx.picker.color.R;
 import androidx.picker3.app.SeslColorPickerDialog;
 
 //Added in sesl7

@@ -35,7 +35,7 @@ import android.widget.Button;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.customview.widget.ExploreByTouchHelper;
-import androidx.picker.R;
+import androidx.picker.color.R;
 
 import java.lang.reflect.Array;
 import java.util.List;
